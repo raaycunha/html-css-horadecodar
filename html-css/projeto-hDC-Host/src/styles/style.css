@@ -16,30 +16,32 @@
     --support: orange;
 }
 
+/* ----- Header */
+
 .container-header {
     display: flex;
     justify-content: center;
     background-color: var(--cor-principal);
-    padding: 10px;
+    padding: 0.6rem;
 }
 
-.container-header img {
-    margin-right: 20px;
-    width: 45px;
+.logo {
+    margin-right: 1rem;
+    width: 2.8rem;
 }
 
 .navbar {
     display: flex;
     flex-flow: nowrap row;
     align-items: center;
-    gap: 20px;
+    gap: 1.2rem;
 }
 
-.navbar a {
+.navbar > a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 #btnEnter {
@@ -47,16 +49,14 @@
     border: none;
     background-color: var(--btn);
     color: white;
-    padding: 10px;
+    padding: 0.7rem;
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
-.container {
-    margin-bottom: 20px;
-}
+/* ----- Banner Principal */
 
 .main-banner {
     display: flex;
@@ -64,61 +64,65 @@
     align-items: center;
     text-align: center;
     background: url('../assets/mainbanner.png') no-repeat center center/cover;
-    padding: 20px;
-    height: 480px;
+    padding: 1.25rem;
+    min-height: 30rem;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-shadow: 1px 1px 10px #000000;
     box-shadow: 1px 6px 7px #00000017;
 }
+
+/* ----- Politica de Segurança */
 
 .security-policy {
     display: flex;
     flex-flow: wrap column;
     align-items: center;
     text-align: center;
-    margin: 100px 0 80px;
-    gap: 50px;
+    margin: 6.25rem 0 5rem;
+    gap: 3.12rem;
     color: var(--text-color);
 }
 
 .security, 
 .performance, 
 .support {
-    margin: 0 25px;
+    margin: 0 1rem;
 }
 
 .security span {
-    font-size: 4em;
+    font-size: 4rem;
     color: var(--btn);
 }
 
 .performance span {
-    font-size: 4em;
+    font-size: 4rem;
     color: var(--red-color);
 }
 
 .support span {
-    font-size: 4em;
+    font-size: 4rem;
     color: var(--support);
 }
+
+/* ----- Planos e Preços */
 
 #plans {
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 100px;
-    margin: 0 30px;
+    gap: 7rem;
+    margin: 0 1rem;
 }
 
 .container-plans {
     display: flex;
     flex-flow: wrap column;
-    gap: 100px;
+    gap: 7rem;
 }
 
 .text-block {
-    margin: 30px 20px;
+    margin: 2rem 1.2rem;
     font-size: 1.2em;
 }
 
@@ -129,14 +133,14 @@
 }
 
 .card p {
-    margin: 10px;
-    padding: 10px;
+    margin: 0.7rem;
+    padding: 0.7rem;
 }
 
 .cardHeaders {
     border-radius: 10px 10px 0 0;
     background-color: var(--cor-principal);
-    padding: 40px 0 20px;
+    padding: 2.2rem 0 1.2rem;
     color: white;
 }
 
@@ -148,11 +152,11 @@
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -80%);
 
     border-radius: 50%;
-    width: 120px;
-    height: 110px;
+    min-width: 120px;
+    min-height: 110px;
     background-color: var(--btn);
     color: white;
     text-shadow: 1px 1px 3px #00000042;
@@ -168,7 +172,7 @@
     color: white;
     border: none;
     background-color: var(--btn);
-    padding: 25px;
+    padding: 1.8rem;
     width: 100%;
     border-radius: 0 0 10px 10px;
     font-weight: bold;
@@ -180,72 +184,85 @@
     background-color: #252931;
 }
 
+/* ----- Dominio */
+
 .domain {
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
     text-align: center; 
     color: white;
     background-color: #34454E;
-    margin: 100px 30px 0;
-    padding: 20px;
+    margin: 6rem 2rem 2rem;
+    padding: 1.2rem;
     border-radius: 10px;
-    gap: 20px;
+    gap: 1rem;
+}
+
+.domain > .text-block {
+    margin: 1rem;
 }
 
 .domain .text-block > h2 {
-    font-size: 1.6em;
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-input#inDomainUser,
-#btnSearch {
-    padding: 15px;
+input#inDomainUser {
+    width: 100%;
+    max-width: 530px;
+    padding: 1rem;
     border: none;
     border-radius: 5px;
 }
 
-input#inDomainUser:focus {
+input:focus,
+textarea {
     outline: black;
 }
 
 #btnSearch {
     color: white;
-    padding: 15px;
+    margin-bottom: 1rem;
+    padding: 1rem;
     background-color: var(--btn);
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
     transition: .5s;
 }
 
+/* ----- Suporte */
+
 #contact {
     text-align: center;
-    margin: 0 30px;
-    padding: 20px;
+    margin: 4rem 2rem 2rem;
 }
 
 #contact > .text-block {
-    margin: 30px 0;
+    margin: 2.2rem 0;
 }
 
 #contact > .text-block > h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 #frm {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 650px;
     margin: auto;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 #frm > .box-data {
     display: flex;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 input#inNameUser,
@@ -253,8 +270,8 @@ input#inEmailUser,
 textarea {
     border-radius: 5px;
     background-color: #e4e4e428;
-    border: 1px solid rgb(117, 117, 117);
-    padding: 10px;
+    border: 1px solid #757575;
+    padding: 0.8rem;
     width: 100%;
 }
 
@@ -269,7 +286,8 @@ textarea {
     color: white;
     border-radius: 5px;
     font-weight: bold;
-    width: 200px;
+    width: 100%;
+    max-width: 260px;
     margin: auto;
     cursor: pointer;
     transition: .5s;
@@ -281,9 +299,11 @@ textarea {
     background-color: #196e3b;
 }
 
+/* ----- Rodapé */
+
 footer {
     text-align: center;
-    margin: 40px 0;
+    margin: 0 0 2rem;
     font-weight: bold;
     color: #5a5a5a;
 }

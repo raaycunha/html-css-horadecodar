@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 20em) {
+    #plans {
+        margin: 5rem 0.5rem;
+    }
+
+    .domain {
+        margin: 1rem 0.5rem;
+    }
+
+    .contact {
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 48em) {
     .container-header {
         justify-content: space-between;
