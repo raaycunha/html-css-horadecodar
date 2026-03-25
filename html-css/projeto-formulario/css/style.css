@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    position: relative;
+    background-color: #F1EBF7;
+}
+header {
+    padding: 15px;
+    height: 20vh;
+    background-color: #683AB1;
+}
+h1 { font-size: 1.6em; }
+h2 { margin-bottom: 10px; }
+main {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.205);
+    width: 80%;
+    margin: auto;
+}
+main > nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a39e9e;
+    height: 55px;
+}
+main > nav > p {
+    color: #683AB1;
+    padding: 18px;
+    border-bottom: 2px solid #683AB1;
+    cursor: pointer;
+    height: 55px;
+}
+main > section {
+    padding: 30px 40px;
+}
+.text-block { margin-bottom: 20px; }
+#frm {
+    display: flex;
+    flex-flow: nowrap column;
+}
+#frm > label:not(.especial) {
+    border-bottom: 1px solid #a39e9e;
+    width: 450px;
+}
+#frm > label > input:not(.check) {
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#frm > label { margin-bottom: 30px; }
+input[type="text"],
+input[type="number"], 
+input[type="date"] {
+    width: 450px;
+}
+span.required-field {
+    display: block;
+    margin-bottom: 10px;
+}
+span.required-field::after {
+    content: " *";
+    color: red;
+}
+ul.lista-opcionais {
+    display: flex;
+    flex-flow: wrap column;
+    list-style: none;
+    height: 80px;
+    width: 380px;
+}
+button[type="submit"] {
+    text-transform: uppercase;
+    background-color: #683AB1;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+button[type="submit"]:hover {
+    background-color: #341c5c;
+}
+#frm textarea {
+    width: 450px;
+    height: 80px;
+    border: 1px solid #a39e9e;
+    display: block;
+}
+#frm fieldset {
+    border: none;
+    margin-bottom: 30px;
+}

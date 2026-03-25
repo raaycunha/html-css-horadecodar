@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastre seu veículo para vender mais rápido!</h1>
+    </header>
+    <main>
+        <nav>
+            <p>FORMULÁRIO</p>
+        </nav>
+        <section>
+            <div class="text-block">
+                <h2>Venda fácil seu carro!</h2>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+            </div>
+            <form id="frm" method="get">
+                <label>
+                    <span class="required-field" title="Obrigatorio">Título do anúncio:</span>
+                    <input type="text"
+                        name="title"
+                        id="inTitle"
+                        placeholder="Um título para anunciar seu carro"
+                        title="Um título para anunciar seu carro"
+                        required
+                        minlength="1">
+                </label>
+                <label>
+                    <span class="required-field" title="Obrigatorio">Preço:</span>
+                    <input type="number"
+                        name="price"
+                        id="inPrice"
+                        placeholder="Defina o preço do seu carro"
+                        title="Defina o preço do seu carro"
+                        step="0.01"
+                        required
+                        min="1">
+                </label>
+                <label>
+                    <span class="required-field" title="Obrigatorio">Descrição:</span>
+                    <textarea placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão ou amassado."></textarea>
+                </label>
+                <label>
+                    <span class="required-field" title="Obrigator io">Marca:</span>
+                    <input type="text"
+                        name="model"
+                        id="inModel"
+                        title="Digite o modelo do seu veículo"
+                        placeholder="Digite o modelo do seu veículo"
+                        required
+                        minlength="1">
+                </label>
+                <label>
+                    <span class="required-field" title="Obrigatorio">Quilometragem:</span>
+                    <input type="text"
+                        name="km"
+                        id="inKm"
+                        title="Digite a quilometragem do seu veículo"
+                        placeholder="Digite a quilometragem do seu veículo"
+                        required
+                        minlength="1">
+                </label>
+                <label>
+                    <span class="required-field" title="Obrigatorio">Data de compra:</span>
+                    <input type="date"
+                        title="Marque a data que você efetuou a compra desse veículo"
+                        required>
+                </label>
+                <label class="especial">
+                    <span class="required-field" title="Obrigatorio">Tipo de câmbio:</span>
+                    <label>
+                        <input type="radio" name="cambio">
+                        Manual
+                    </label>
+                    <label>
+                        <input type="radio" name="cambio" checked>
+                        Automático
+                    </label>
+                </label>
+                    <fieldset>
+                        <legend style="margin-bottom: 15px;">Opcionais:</legend>
+                            <ul class="lista-opcionais">
+                                <li><label><input class="check" type="checkbox"> Airbag</label></li>
+                                <li><label><input class="check" type="checkbox"> Alarme</label></li>
+                                <li><label><input class="check" type="checkbox"> Ar Condicionado</label></li>
+                                <li><label><input class="check" type="checkbox"> Câmera de Ré</label></li>
+                                <li><label><input class="check" type="checkbox"> Assistente de Pista</label></li>
+                                <li><label><input class="check" type="checkbox"> Partida Keyless</label></li>
+                                <li><label><input class="check" type="checkbox"> Integração com celular</label></li>
+                                <li><label><input class="check" type="checkbox"> Banco de couro</label></li>
+                            </ul>
+                    </fieldset>
+                <label>
+                    <span class="required-field" title="Obrigatorio">Fotos do carro:</span>
+                    <input type="file" multiple accept="image/png, image/jpg">
+                </label>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

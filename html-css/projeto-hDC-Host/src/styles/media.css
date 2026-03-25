@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 48em) {
+    .navbar {
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .navbar img {
+       margin-right: 0;
+    }
+
+    .security-policy {
+        display: flex;
+        flex-flow: nowrap row;
+        margin: 100px 0 80px;
+        gap: 5px;
+    }
+
+    .security,
+    .performance, 
+    .support {
+        margin: 0;
+    }
+
+    #plans {
+        flex-flow: nowrap column;
+    }
+
+    .container-plans {
+        flex-flow: nowrap row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .domain {
+        align-items: center;
+        background-color: #34454E;
+        padding: 60px;
+        margin: 100px 0 0;
+        border-radius: 0;
+    }
+
+    .domain .text-block {
+        margin-bottom: 0;
+    }
+
+    .domain input {
+        width: 560px;
+    }
+
+    .domain button {
+        width: 30%;
+    }
+
+    #btnSearch {
+        max-width: 260px;
+    }
+}
+
+@media screen and (min-width: 56em) {
+    .card {
+        width: 100%;
+    }
+}
