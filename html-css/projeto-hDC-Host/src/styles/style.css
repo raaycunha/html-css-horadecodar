@@ -16,28 +16,23 @@
     --support: orange;
 }
 
-header {
+.container-header {
+    display: flex;
+    justify-content: center;
     background-color: var(--cor-principal);
     padding: 10px;
+}
+
+.container-header img {
+    margin-right: 20px;
+    width: 45px;
 }
 
 .navbar {
     display: flex;
     flex-flow: nowrap row;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    flex-flow: nowrap row;
     align-items: center;
     gap: 20px;
-}
-
-.navbar img {
-    margin-right: 20px;
-    width: 45px;
 }
 
 .navbar a {
@@ -55,12 +50,8 @@ header {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .6s;
+    transition: .5s;
     font-size: 0.8em;
-}
-
-#btnEnter:hover {
-    background-color: #1b703f;
 }
 
 .container {
@@ -126,23 +117,18 @@ header {
     gap: 100px;
 }
 
-#plans h3 {
-    color: white;
-    display: inline-block;
-}
-
 .text-block {
     margin: 30px 20px;
     font-size: 1.2em;
 }
 
-.card-block {
+.card {
+    position: relative;
     border-radius: 10px;
     background-color: var(--bg-plans);
 }
 
-.card-block p {
-    border-bottom: 1px solid black;
+.card p {
     margin: 10px;
     padding: 10px;
 }
@@ -151,10 +137,7 @@ header {
     border-radius: 10px 10px 0 0;
     background-color: var(--cor-principal);
     padding: 40px 0 20px;
-}
-
-.card {
-    position: relative;
+    color: white;
 }
 
 .block {
@@ -171,18 +154,16 @@ header {
     width: 120px;
     height: 110px;
     background-color: var(--btn);
+    color: white;
+    text-shadow: 1px 1px 3px #00000042;
 }
 
-.thirdPlan .block, .thirdPlan #btnHave {
+.thirdPlan > .block, 
+.thirdPlan > .btnHave {
     background-color: var(--red-color);
 }
 
-.block p {
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.26);
-}
-
-#plans button {
+.btnHave {
     text-transform: uppercase;
     color: white;
     border: none;
@@ -195,7 +176,7 @@ header {
     transition: .5s;
 }
 
-#plans button:hover {
+.btnHave:hover {
     background-color: #252931;
 }
 
@@ -211,19 +192,19 @@ header {
     gap: 20px;
 }
 
-.domain .text-block h2 {
+.domain .text-block > h2 {
     font-size: 1.6em;
     margin-bottom: 10px;
 }
 
-.domain input,
+input#inDomainUser,
 #btnSearch {
     padding: 15px;
     border: none;
     border-radius: 5px;
 }
 
-.domain input:focus {
+input#inDomainUser:focus {
     outline: black;
 }
 
@@ -237,19 +218,20 @@ header {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
+    transition: .5s;
 }
 
-.contact {
+#contact {
     text-align: center;
     margin: 0 30px;
     padding: 20px;
 }
 
-.contact .text-block {
+#contact > .text-block {
     margin: 30px 0;
 }
 
-.contact .text-block h2 {
+#contact > .text-block > h2 {
     margin-bottom: 10px;
 }
 
@@ -261,12 +243,14 @@ header {
     gap: 10px;
 }
 
-.box-data {
+#frm > .box-data {
     display: flex;
     gap: 10px;
 }
 
-#frm input, textarea {
+input#inNameUser,
+input#inEmailUser,
+textarea {
     border-radius: 5px;
     background-color: #e4e4e428;
     border: 1px solid rgb(117, 117, 117);
@@ -274,11 +258,11 @@ header {
     width: 100%;
 }
 
-#frm textarea {
+textarea {
     height: 120px;
 }
 
-#frm button {
+#btnSend {
     padding: 10px;
     background-color: var(--btn);
     border: none;
@@ -287,6 +271,14 @@ header {
     font-weight: bold;
     width: 200px;
     margin: auto;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btnEnter:hover,
+#btnSearch:hover, 
+#btnSend:hover {
+    background-color: #196e3b;
 }
 
 footer {
