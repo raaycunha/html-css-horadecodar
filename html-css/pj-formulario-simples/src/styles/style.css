@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --font-color: black;
+    --bg-color: white;
+    --form-color: #f6f8fa;
+    --btn-color: white;
+    --btn-pointer: #f3f7fa;
+    --btnSend-color: #2463E3;
+    --btnSend-pointer: #123375;
+    --input-color: white;
+    --footer-color: #8d8d8d;
+}
+
+.dark-mode {
+    --font-color: white;
+    --bg-color: #0A121F;
+    --form-color: #101825;
+    --btn-color: #101825;
+    --btn-pointer: #0A121F;
+    --btnSend-color: #6885be;
+    --btnSend-pointer: #395b9e;
+    --input-color: #0A121F;
+    --footer-color: #535353;
+}
+
+body {
+    color: var(--font-color);
+    position: relative;
+    background-color: var(--bg-color);
+    width: 100vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30%;
+}
+
+#btnTheme {
+    color: var(--font-color);
+    background-color: var(--btn-color);
+    padding: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#btnTheme:hover {
+    background-color: var(--btn-pointer);
+}
+
+header,
+input,
+#btnTheme,
+#frm,
+#btnSend,
+footer {
+    outline: none;
+    border: 1px solid #3f3f3f94;
+    border-radius: 5px;
+}
+
+#frm {
+    display: flex;
+    flex-flow: column;
+    margin: 2rem 30%;
+    padding: 1.5rem 1rem;
+    background-color: var(--form-color);
+}
+
+#frm > .text-block {
+    margin-bottom: 1.2rem;
+}
+
+#frm > .text-block > h2 {
+    margin-bottom: 0.5rem;
+}
+
+.box-input {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+}
+
+.box-input > label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.box-input > input {
+    background-color: var(--input-color);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input#inEmailUser {
+    margin-bottom: 0.5rem;
+}
+
+#btnSend {
+    background-color: var(--btnSend-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btnSend:hover {
+    background-color: var(--btnSend-pointer);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--footer-color)
+}

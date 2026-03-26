@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="title">Newsletter</h1>
+            <button id="btnTheme" class="btnDark">Alterar tema
+            <i class="fa-regular fa-moon" aria-label="Trocar tema"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="container-form">
+        <form id="frm" method="get">
+            <div class="text-block">
+                <h2>Inscreva-se</h2>
+                <p>Receba novidades no seu e-mail. Sem spam.</p>
+            </div>
+
+            <div class="box-input">
+                <label for="inNameUser">Nome</label>
+                <input type="text"
+                name="nameUser"
+                id="inNameUser"
+                placeholder="Digite seu nome.."
+                title="Digite seu nome"
+                minlength="1"
+                required maxlength="20">
+            </div>
+
+            <div class="box-input">
+                <label for="inEmailUser">Email</label>
+                <input type="email"
+                name="emailUser"
+                id="inEmailUser"
+                placeholder="seu.email@exemplo.com"
+                title="Digite seu email"
+                required minlength="1">
+            </div>
+
+            <button id="btnSend" type="submit">Quero receber</button>
+        </form>
+    </main>
+    <footer>
+        <small>
+            <p>Newsletter 2025</p>
+        </small>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
