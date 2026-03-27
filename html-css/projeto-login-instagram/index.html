@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+    <link rel="shortcut icon" href="src/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
-    
+    <main class="main-container">
+        <section class="banner-phone">
+            <img src="src/assets/banner2.png" alt="Banner-Instagram" class="banner">
+        </section>
+        <section class="container-form">
+            <article class="card-form">
+                <header class="logo">
+                    <img src="src/assets/logo_instagram.png" alt="Logo-Instagram" class="instagram">
+                </header>
+                <form id="frm" method="post">
+                    <input type="text" 
+                    name="login" 
+                    id="inLogin"
+                    title="Telefone, nome de usuário ou email"
+                    placeholder="Telefone, nome de usuário ou e-mail"
+                    required minlength="1">
+
+                    <input type="password" 
+                    name="pass" 
+                    id="inPass"
+                    title="Digite sua senha"
+                    placeholder="Senha"
+                    required minlength="8">
+
+                    <button id="btnSubmit" type="submit" class="btnOff">Entrar</button>
+                </form>
+                <div class="divider">ou</div>
+                <div class="links-form">
+                    <div class="link-facebook">
+                        <img src="src/assets/logo_facebook.svg" alt="Logo-Facebook" class="facebook"><a href="#">Entrar com o Facebook</a>
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card-sign">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </article>
+            <article class="card-dowload">
+                <p>Obtenha o aplicativo.</p>
+                <div class="card-btn">
+                    <a href="#">
+                        <img src="src/assets/apple_btn.png" alt="Botão-AppStore" class="appstore">
+                        <img src="src/assets/gplay_btn.png" alt="Botão-GPlay" class="gplay">
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-links">
+        <ul class="links">
+            <li><a href="#">Meta</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+            <li><a href="#">Principais contas</a></li>
+            <li><a href="#">Hashtags</a></li>
+            <li><a href="#">Localização</a></li>
+            <li><a href="#">Instagram Lite</a></li>
+        </ul>
+        <p>@2022 Instagram from Meta</p>
+    </footer>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
