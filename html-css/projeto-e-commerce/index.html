@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Produto</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="links">
+                <a href="#">Camisas</a>
+                <a href="#">Calças</a>
+                <a href="#">Acessórios</a>
+            </div>
+            <img src="src/assets/logo.png" alt="Icon-Cart" class="icon-cart">
+            <div class="search">
+                <img src="src/assets/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icon-Search">
+                <img src="src/assets/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Icon-Cart">
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="banner-product">
+            <img src="src/assets/produto.webp" alt="Produto" class="img-product">
+        </section>
+        <section class="info-product">
+            <h1>Gola polo Sport</h1>
+            <section class="box-reviews">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>78 Avaliações</p>
+            </section>
+            <section class="box-price">
+                <h2>R$ 100,00</h2>
+            </section>
+            <section class="box-colors">
+                <h3>Cores Disponiveis</h3>
+                <article class="colors-box">
+                    <label class="color-container">
+                        <input type="radio" name="color" id="inBlue">
+                        <span class="checkmark blue"></span>
+                    </label>
+                    <label class="color-container">
+                        <input type="radio" name="color" id="inBlack">
+                        <span class="checkmark black"></span>
+                    </label>
+                    <label class="color-container">
+                        <input type="radio" name="color" id="inGray">
+                        <span class="checkmark gray"></span>
+                    </label>
+                </article>
+            </section>
+            <section class="cloth-size">
+                <h3>Selecione o Tamanho</h3>
+                <select name="size">
+                    <option value="size-P">P</option>
+                    <option value="size-M" selected>M</option>
+                    <option value="size-G">G</option>
+                </select>
+            </section>
+            <button id="btnSend" type="button">Adicionar ao Carrinho</button>
+            <section class="details-product">
+                <h3>Detalhes do Produto</h3>
+                <p>Camisa de alta qualidade, feita com material nobre e importado</p>
+            </section>
+        </section>
+    </main>
+    <footer class="container-footer">
+        <section class="transparency">
+            <h4>Transparência Total</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reprehenderit 
+                soluta iure fugit laboriosam, vero dicta sunt nemo nihil natus beatae aut mollitia 
+                molestiae, nesciunt iste? Veniam qui inventore expedita.
+            </p>
+        </section>
+        <section class="production">
+            <h4>Custo de Produtoção</h4>
+            <p>Detalhes todos os custos que temos para criar o produto.</p>
+            <a href="#">Ver detalhamento de custos</a>
+        </section>
+        <section class="tracking">
+            <h4>Rastreabilidade</h4>
+            <p>Saiba de onde vem o material para as suas roupas.</p>
+            <a href="#">Mostrar origem do produto</a>
+        </section>
+        <section class="impact">
+            <h4>Impacto de CO2</h4>
+            <p>Veja a redução de impacto ambiental que tivemos no ano de 2024.</p>
+            <a href="#">Mostrar estudo</a>
+        </section>
+    </footer>
+</body>
+</html>
