@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Fone de Ouvido Bluetooth - Preto</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="box-logo">
+                <img src="src/assets/logo.png" alt="Logo-TechStore" class="logo-techstore">
+                <h2>TechStore</h2>
+            </div>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#">Computadores</a></li>
+                    <li><a href="#">TVs</a></li>
+                    <li><a href="#">Acessórios</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </nav>
+            <div class="container-search">
+                <div class="box-login">
+                    <button id="btnLogin" type="button">
+                        <i class="fa-solid fa-user"></i>
+                        Login/Cadastro
+                    </button>
+                </div>
+                <div class="box-search">
+                    <input type="text" 
+                    name="product" 
+                    id="inProduct"
+                    title="Produto que deseja buscar"
+                    placeholder="Buscar produto.."
+                    minlength="1"
+                    required maxlength="20">
+                    <button id="btnSearch" type="button" title="Buscar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="container">
+            <section class="container-product">
+                <section class="featured">
+                    <img src="src/assets/fone_destaque.png" alt="Fone-Destaque" class="featured-img">
+                    <div class="box-headset">
+                        <button class="btn-headset">
+                            <img src="src/assets/fone1.png" alt="Imagem-Fone1" class="headset">
+                        </button>
+                        <button class="btn-headset">
+                            <img src="src/assets/fone2.png" alt="Imagem-Fone2" class="headset">
+                        </button>
+                        <button class="btn-headset">
+                            <img src="src/assets/fone3.png" alt="Imagem-Fone3" class="headset">
+                        </button>
+                    </div>
+                </section>
+                <section class="details">
+                    <span class="path">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Tecnologia / Fones / Sem fio
+                    </span>
+                    <h1 class="name-product">Fone de Ouvido Bluetooth - Preto</h1>
+                    <span class="code-product">Codigo do Produto: 98765XYZ</span>
+                    <h2 class="price">R$ 349,99</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>22 Avaliações</span>
+                    </div>
+                    <p class="description">
+                        Aproveite uma experiência sonora única com nossos fones de ouvido Bluetooth.
+                        Design moderno, leve e ideal para qualquer ocasião. Sons nítidos e graves 
+                        potentes que elevam sua música a um novo patamar.
+                    </p>
+                    <div class="color">
+                        <span>Cor:</span>
+                        <select name="color" id="inColor">
+                            <option value="Black">Preto</option>
+                            <option value="White">Branco</option>
+                            <option value="Gray">Cinza</option>
+                        </select>
+                    </div>
+                    <div class="quantity">
+                        <span>Quantidade:</span>
+                        <select name="number" id="inNumber">
+                            <option value="n1">1</option>
+                            <option value="n2">2</option>
+                            <option value="n3">3</option>
+                        </select>
+                    </div>
+                    <section class="box-purchase">
+                        <button id="btnPurchase" type="button">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            Adicionar ao carrinho
+                        </button>
+                        <button id="btnList" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Adicionar á lista de desejos
+                        </button>
+                    </section>
+                    <span class="delivery">
+                        <i class="fa-solid fa-box"></i>
+                        Estimativa de Entrega: Consulte nossos Termos e Condições
+                    </span>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="container">
+            <div class="links-footer">
+                <a href="#"><i class="fa-solid fa-headphones"></i> Detalhes</a>
+                <a href="#"><i class="fa-solid fa-box"></i> Devolução</a>
+                <a href="#"><i class="fa-brands fa-amazon"></i> Entrega</a>
+            </div>
+            <ul class="list-footer">
+                <li><span class="strong">SKU:</span> TECH98765</li>
+                <li><span class="strong">Material Externo:</span> Plástico ABS</li>
+                <li><span class="strong">Tempo de Bateria:</span> Até 20 horas</li>
+                <li><span class="strong">Conectividade:</span> Bluetooth 5.0</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

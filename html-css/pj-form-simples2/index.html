@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" 
+    integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <main class="container-form">
+        <header>
+            <h2>Formulário de Login</h2>
+        </header>
+        <form id="frm" method="post">
+            <label for="inEmail" class="box-input">
+                <i class="bx bx-user"></i>
+                <input type="email"
+                name="email"
+                id="inEmail"
+                title="Digite seu email"
+                placeholder="Endereço de E-mail"
+                required>
+            </label>
+            <label for="inPass" class="box-input">
+                <input type="password"
+                name="pass"
+                id="inPass"
+                title="Digite sua senha"
+                placeholder="Senha"
+                minlength="1"
+                required maxlength="15">
+            </label>
+            <div class="container">
+                <div class="box-check">
+                    <input type="checkbox" name="remember" id="inRemember">
+                    <label for="inRemember">Lembrar-me</label>
+                </div>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+            <button id="btnEnter" type="submit">Entrar</button>
+        </form>
+        <span>Não é um membro? <a href="#">Cadastre-se agora</a></span>
+    </main>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    background-color: #070707fa;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header {
+    color: white;
+    background-color: #1E1E1E;
+    padding: 1rem;
+}
+
+header > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.box-logo > .logo-techstore {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 0.7rem;
+    list-style: none;
+}
+
+.menu a {
+    color: #F4AC20;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .6s ease;
+}
+
+.menu a:hover {
+    color: #a3710e;
+    text-decoration: underline;
+}
+
+.container-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#btnLogin {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: .6s ease;
+}
+
+#btnLogin:hover { background-color: #141414; }
+
+input#inProduct {
+    border-radius: 5px;
+    border: 1px solid #F4AC20;
+    padding: 0.3rem;
+    font-weight: bold;
+    margin-right: 0.3rem;
+}
+
+#btnSearch {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main-container { padding: 0 1rem; }
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.featured img { 
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.box-headset {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.btn-headset {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-headset img {
+    width: 75px;
+    transition: .5s; 
+}
+
+.btn-headset img:hover {
+    transform: scale(95%);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.path,
+.star span,
+.code-product,
+.delivery {
+    color: #595959;
+    font-size: 0.9rem;
+}
+
+.name-product { color: #FAFAFA; }
+
+.code-product {
+    font-size: 0.9rem;
+    color: #595959; 
+}
+
+.price {
+    font-size: 1.7rem;
+    color: #F4AC20;
+}
+
+.star i { color: #F4AC20; }
+
+.description { color: #FAFAFA; }
+
+.color, .quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: bold;
+    max-width: 95px;
+    color: #fafafa;
+}
+
+select#inColor, select#inNumber { padding: 0.4rem; }
+.quantity { margin-bottom: 1rem; }
+
+.box-purchase {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.box-purchase > button {
+    background-color: #1E1E1E;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+#btnPurchase { color: white; }
+#btnList {
+    color: #F4AC20;
+    border: 2px solid #F4AC20;
+}
+
+.box-purchase > button:hover {
+    transform: scale(98%);
+}
+
+.delivery {
+    margin-top: 0.5rem;
+}
+
+.footer-container > .container {
+    background-color: #1E1E1E;
+    color: #6b6b6b;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 0 0.3rem;
+    border-bottom: 1px solid #59595975;
+    margin: 0.5rem 0 1rem;
+}
+
+.links-footer a {
+    color: #6b6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list-footer {
+    list-style: none;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 63.9em) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .container-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-img { 
+        width: 700px
+    }
+
+    .box-headset img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 27em) {
+    ul a { font-size: 0.9rem; }
+}
