@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+:root {
+    --bg-color: #1A1B2F;
+    --text-color: #9D9BA3;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+
+.header-container > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.title-logo > img {
+    width: 50px;
+}
+
+.list-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.list-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 5px;
+    transition: .6s ease;
+}
+
+.list-menu a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.main-container > .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 0 0.5rem;
+}
+
+.content-container { margin-right: 6rem; }
+
+.content-container > #frm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#frm > h1 {
+    color: white;
+    max-width: 17.5rem;
+}
+
+#frm > h1 > .strong { color: #DE6B52; }
+
+.box-input > input {
+    width: 100%;
+    max-width: 33rem;
+    padding: 0.6rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #2D2E39;
+}
+
+.box-input > input:focus {
+    outline: none;
+    border: 1px solid #DE6B52; 
+}
+
+#btnSubmit {
+    width: 100%;
+    max-width: 10rem;
+    padding: 0.55rem;
+    border-radius: 12px;
+    border: none;
+    background-image: linear-gradient(to right, #DE6B52, #5f3830);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s;
+}
+
+#btnSubmit:hover { transform: scale(95%); }
+
+.banner-container {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-container > img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 2rem 0;
+    z-index: 1;
+}
+
+.circle-orange {
+    position: absolute;
+    left: -19%;
+    bottom: 9%;
+    background-image: linear-gradient(to bottom, #DE6B52, #5f3830);
+    padding: 7rem;
+    border-radius: 50%;
+    filter: blur(1px);
+    z-index: 0;
+}
